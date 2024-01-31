@@ -31,9 +31,17 @@ fetch("https://catfact.ninja/facts")
   .then((data) => console.log(data))
   .catch((error) => console.error("Error:", error));
 
+// parameter = the url adress:("https://catfact.ninja/facts")
+//
 // fetch = function ( fetch is built in function)
+//
 // .then = method ( always after completion)
-// response = not built in attribute, but is the name of the callback. when async is finished make the repsonse to this
+//
+// ((response)) = not built in attribute, but is the name of the callback. when async is      // finished make the recieved respons do "this"
+//
+// ((data)) = is when the respons from fetch is stored in this case as a json.
+// this converts whatever respons into data.
+//
 // .catch = function ( when all is synced/completed) catch "this" specific thing.
 // in this case "catch" catches errors ( error is given name and not built in)
 // it then consol.logs whatever errors it finds.
