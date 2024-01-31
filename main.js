@@ -2,6 +2,29 @@
 //   console.log(response);
 // });
 // Use callbacks to fix process dilemmas
+//
+//
+
+
+
+
+doSomething()
+doSomethingExpr()
+
+
+
+
+let doSomethingExpr = function (){
+    console.log("something")
+  }
+
+function doSomething(){
+  console.log("something")
+}
+
+
+
+const catFactsContainer = document.getElementById("catFactsContainer");
 
 fetch("https://catfact.ninja/facts")
   .then((response) => response.json())
@@ -47,14 +70,19 @@ fetch("https://catfact.ninja/facts")
 // it then consol.logs whatever errors it finds.
 
 //fetch api and add to html document
-
+// this call the api and adds it in the hmtl
 fetch("https://catfact.ninja/facts")
   .then((response) => response.json())
   .then((data) => {
-    // Display cat facts on the web page
-    const catFactsContainer = document.getElementById("catFactsContainer");
+    // Display cat facts on the web page in the div
+
     catFactsContainer.innerHTML = `<p>${data.data[0].fact}</p>`;
+
+
+
   })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
+
+
+  // .catch((error) => {
+  //   console.error("Error:", error);
+  // });
