@@ -23,3 +23,5 @@ let toDo1 = {
   unchecked: "something",
 };
 console.log(toDo1.name); // result = false, since the name of toDo1 is called false
+// instead of hardcoding data, use APi. as Api/https has the same template always. so we know what we get without coding it.
+// URL = unified resource locater
