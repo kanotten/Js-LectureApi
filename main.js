@@ -25,3 +25,15 @@ let toDo1 = {
 console.log(toDo1.name); // result = false, since the name of toDo1 is called false
 // instead of hardcoding data, use APi. as Api/https has the same template always. so we know what we get without coding it.
 // URL = unified resource locater
+
+fetch("https://catfact.ninja/facts")
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.error("Error:", error));
+
+// fetch = function ( fetch is built in function)
+// .then = method ( always after completion)
+// response = not built in attribute, but is the name of the callback. when async is finished make the repsonse to this
+// .catch = function ( when all is synced/completed) catch "this" specific thing.
+// in this case "catch" catches errors ( error is given name and not built in)
+// it then consol.logs whatever errors it finds.
