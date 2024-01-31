@@ -45,3 +45,16 @@ fetch("https://catfact.ninja/facts")
 // .catch = function ( when all is synced/completed) catch "this" specific thing.
 // in this case "catch" catches errors ( error is given name and not built in)
 // it then consol.logs whatever errors it finds.
+
+//fetch api and add to html document
+
+fetch("https://catfact.ninja/facts")
+  .then((response) => response.json())
+  .then((data) => {
+    // Display cat facts on the web page
+    const catFactsContainer = document.getElementById("catFactsContainer");
+    catFactsContainer.innerHTML = `<p>${data.data[0].fact}</p>`;
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
