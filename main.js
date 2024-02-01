@@ -98,3 +98,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Tasks to do: create a fetch, send and delete reques using Api
 // Take notes on questions if needed
+// // Ids on apis. Id is only used when updating, or else it is a unique id for each request.
+// ID is therefor not included as it is provided. just for update
