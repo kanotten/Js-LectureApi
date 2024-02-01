@@ -1,4 +1,4 @@
-g// fetch("catfact.ninja/facts", function(response) => {
+g; // fetch("catfact.ninja/facts", function(response) => {
 //   console.log(response);
 // });
 // Use callbacks to fix process dilemmas
@@ -41,10 +41,10 @@ console.log(toDo1.name); // result = false, since the name of toDo1 is called fa
 // instead of hardcoding data, use APi. as Api/https has the same template always. so we know what we get without coding it.
 // URL = unified resource locater
 
-fetch("https://catfact.ninja/facts")
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.error("Error:", error));
+// fetch("https://catfact.ninja/facts")
+//   .then((response) => response.json())
+//   .then((data) => console.log(data))
+//   .catch((error) => console.error("Error:", error));
 
 // parameter = the url adress:("https://catfact.ninja/facts")
 //
@@ -63,16 +63,13 @@ fetch("https://catfact.ninja/facts")
 
 //fetch api and add to html document
 // this call the api and adds it in the hmtl
+
+// Display cat facts on the web page in the div
+
 fetch("https://catfact.ninja/facts")
   .then((response) => response.json())
   .then((data) => {
-    // Display cat facts on the web page in the div
-
+    console.log(data);
     catFactsContainer.innerHTML = `<p>${data.data[0].fact}</p>`;
-  });
-
-funtion;
-
-// .catch((error) => {
-//   console.error("Error:", error);
-// });
+  })
+  .catch((error) => console.error("Error:", error));
