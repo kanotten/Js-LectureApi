@@ -1,28 +1,20 @@
-// fetch("catfact.ninja/facts", function(response) => {
+g// fetch("catfact.ninja/facts", function(response) => {
 //   console.log(response);
 // });
 // Use callbacks to fix process dilemmas
 //
 //
 
+doSomething();
+doSomethingExpr();
 
+let doSomethingExpr = function () {
+  console.log("something");
+};
 
-
-doSomething()
-doSomethingExpr()
-
-
-
-
-let doSomethingExpr = function (){
-    console.log("something")
-  }
-
-function doSomething(){
-  console.log("something")
+function doSomething() {
+  console.log("something");
 }
-
-
 
 const catFactsContainer = document.getElementById("catFactsContainer");
 
@@ -77,12 +69,10 @@ fetch("https://catfact.ninja/facts")
     // Display cat facts on the web page in the div
 
     catFactsContainer.innerHTML = `<p>${data.data[0].fact}</p>`;
+  });
 
+funtion;
 
-
-  })
-
-
-  // .catch((error) => {
-  //   console.error("Error:", error);
-  // });
+// .catch((error) => {
+//   console.error("Error:", error);
+// });
