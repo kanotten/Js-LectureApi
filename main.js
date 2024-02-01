@@ -95,3 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error:", error));
 });
+
+// Tasks to do: create a fetch, send and delete reques using Api
+// Take notes on questions if needed
